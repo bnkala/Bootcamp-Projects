@@ -20,9 +20,5 @@ void ft_putnbr(int nb){
 	ft_putchar(x % 10 + 48);
 } 
 
-int main(){
-	ft_putnbr(2);
-	ft_putchar('\n');
-	return(0);
-}
+
 
