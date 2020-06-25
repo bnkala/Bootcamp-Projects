@@ -2,9 +2,14 @@
 #include <unistd.h>
 
 void ft_ft(int *nbr){
+	char c;
 	*nbr = 42;
+	c = *nbr;
+	write(1, &c, 1);
 }
 
 int main(){
-	ft_ft(*42);
+	int n;
+	ft_ft(&n);
+	return(0);
 }
