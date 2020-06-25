@@ -12,24 +12,17 @@
 
 #include <stdio.h>
 #include <unistd.h>
-
-int ft_putchar(char c){
-	write(1, &c, 1);
-	return (0);
-}
+#include <string.h>
 
 char *ft_strcpy(char *dest, char *src){
 	int x;
 	x = 0;
 	while (src[x] != '\0'){
 		dest[x] = src[x];
-		ft_putchar(dest);
+	
 		x++;
 	}
 	*dest = '\0';
 	return dest;
 }
 
-int main(){
-	return (0);
-}
